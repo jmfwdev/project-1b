@@ -1,4 +1,18 @@
 @use "color" as *;
+@use "break-points" as *;
+
+// define a mixin for media query
+
+@mixin respond-to($breakpoints) {
+  @if $breakpoints == small {
+    @media (min-width: 50em) {
+      @content;
+    }
+  }
+}
+  
+
+
 
 .animation-section {
   height: 500vh;
@@ -26,30 +40,46 @@
 }
 
 
-.one {
-  width: 100%;
-  height: 100%;
-  img {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      z-index: -1;
+  .one {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        text-align: center;
+        left: 0;
+        z-index: -1;
+        
+    }
+    h2 {
+        border: 2px solid black;
+        width: fit-content;
+        padding: 5px;
+        background-color: rgb(232, 230, 230);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px (black);
+        text-align: center;
+    }
+    hr {
+      border: none; 
+              height: 5px;
+              background-color: #000; 
+              margin-top: 174px;  
+    }
+    @include respond-to(small) {
+    h2 {
+    font-size: 35px;
+    margin: 20px;
+   }
+   
+    }
   }
-  h2 {
-      border: 2px solid black;
-      width: fit-content;
-      padding: 5px;
-      background-color: rgb(232, 230, 230);
-      border-radius: 10px;
-      box-shadow: 5px 5px 5px (black);
-  }
-  hr {
-    border: none; 
-            height: 5px;
-            background-color: #000; 
-            margin-top: 174px;  
-  }
-}
+
+
 
 .text-information {
   width: 100%;
@@ -65,12 +95,20 @@
   font-size: 3.8rem;
   font-family: 'Times New Roman', Times, serif;
   margin-bottom: 0;
+  animation: changeColor 3s linear infinite;
+
   }
   p {
    margin-top: 0;
   }
 }
 
+@keyframes changeColor {
+  0% { color: $color1; }
+  33% { color: $color2; }
+  66% { color: $color3; }
+  100% { color: $color1; }
+}
 
 .three {
   position: relative;
@@ -79,6 +117,7 @@
     padding-top: 0;
   font-size:5.5rem;
   margin: 50px, 0, 0, 0;
+  text-align: center;
   }
   p {
     color:rgb(227, 227, 227);
@@ -90,12 +129,55 @@
   }
   h2 img {
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
   }
+  img {
+    width: 100%;
+  }
+  
+  @include respond-to(small) {
+    img {
+    width: 70%;
+   }
+   
+    }
 
 }
 
-
 .scroll {
   margin-top: 0;
+}
+
+
+.text-from-presentation {
+  overflow: hidden;
+  margin-top: 3rem;
+  padding: 10px;
+  .tutorial-video{
+    align-content: center;
+    box-shadow: 10px 10px 5px rgb(128, 128, 128);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  h2 {
+    text-align: left;
+  }
+  p {
+    border: solid 2px black;
+    padding: 10px;
+    background-color: rgb(219, 218, 218);
+    border-radius: 10px;
+    z-index: 4;
+  }
+
+  @include respond-to(small) {
+    h2 {
+    font-size: 2.5rem;
+   }
+   p {
+    font-size: 30px;
+   }
+   
+    }
 }
