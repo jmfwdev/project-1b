@@ -1,0 +1,14 @@
+@use "color" as *;
+
+.frontPage {
+    width: 100vw;
+    height: 100vh;
+    background: #466368;
+    background: linear-gradient($gradient-start, $gradient-end);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
