@@ -1,0 +1,67 @@
+@use "color" as *;
+
+.animation-intro {
+  height: 100vh;
+  background: linear-gradient(to bottom, $gradient-start, $gradient-end);
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: 2s ease forwards 2s fill;
+}
+
+.logo path:nth-child(1) {
+  stroke-dasharray: 449.4px;
+  stroke-dashoffset: 449.4px;
+  animation: 3s ease forwards logo-animation;
+}
+.logo path:nth-child(2) {
+  stroke-dasharray: 449.4px;
+  stroke-dashoffset: 449.4px;
+  animation: 3s ease forwards logo-animation;
+}
+.logo path:nth-child(3) {
+  stroke-dasharray: 454.4px;
+  stroke-dashoffset: 454.4px;
+  animation: 3s ease forwards logo-animation;
+}
+
+
+@keyframes logo-animation {
+  from {
+    
+  }
+  to {
+    stroke-dasharray: 0%;;
+    stroke-dashoffset: 0%;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: none
+  }
+  to {
+    fill: rgb(1, 1, 1);
+  }
+}
+
+
+
+/* this is for the blue box */
+.box {
+  animation: move-right-box 2s alternate infinite;
+}
+
+@keyframes move-right-box{
+  from {
+    transform: translateX(0px);
+}
+  
+  to {
+    transform: translateX(100px);
+  }
+}
