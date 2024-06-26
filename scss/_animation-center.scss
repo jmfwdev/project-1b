@@ -56,6 +56,7 @@
 }
 
 .two {
+  overflow: hidden;
   h2 {
   color:rgb(227, 227, 227);
   top: 50%;
@@ -69,33 +70,32 @@
    margin-top: 0;
   }
 }
-.two {
-  overflow: hidden;
-}
+
 
 .three {
-  font-size: 6rem;
   position: relative;
   overflow: hidden;
-
-}
-.three h2 {
-  padding-top: 0;
-}
-
-.three p {
-  color:rgb(227, 227, 227);
+  h2 {
+    padding-top: 0;
+  font-size:5.5rem;
+  margin: 50px, 0, 0, 0;
+  }
+  p {
+    color:rgb(227, 227, 227);
   top: 0;
   left: 50%;
   white-space: nowrap;
   font-size: 30rem;
   font-family: 'Times New Roman', Times, serif;
+  }
+  h2 img {
+    display: flex;
+justify-content: space-between;
+  }
+
 }
 
-.three h2 img {
-  display: flex;
-justify-content: space-between;
-}
+
 .scroll {
   margin-top: 0;
 }
