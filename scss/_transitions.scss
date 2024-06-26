@@ -1,0 +1,66 @@
+
+.transitions {
+    align-items: center;
+    background-color: #b182eb;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transition-title{
+    align-content: center;
+    margin: 0 auto;
+    background-color: #fff;
+    width: 130px;
+    height: 70px;
+    transition: all 5s;
+}
+
+.transition-title:hover{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}
+
+.first-part{
+    display: flex;
+
+}
+
+.timing-function{
+    border: 1px solid black;
+    max-width: 5000px;
+
+}
+
+.example-1, .example-2, .example-3, .example-4 {
+    width: 100px;
+    height: 100px;
+    background: rgb(233, 147, 147);
+    margin: 10px;
+    transition: width 3s;
+}
+
+.example-1 {
+    transition-timing-function: linear;
+}
+
+.example-2 {
+    transition-timing-function: ease;
+}
+
+.example-3 {
+    transition-timing-function: ease-in;
+}
+
+.example-4 {
+    transition-timing-function: ease-out;
+}
+
+.example-1:hover, .example-2:hover, .example-3:hover, .example-4:hover {
+    width: 300px;
+}
+
+.transitions-explanation p{
+    margin-left: 10px;
+}

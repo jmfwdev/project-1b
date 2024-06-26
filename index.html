@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="animation.js"></script>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <title>CSS Transitions & Animations</title>
-  </head>
-  <body>
-    <!-- animation section -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="animation.js"></script>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <title>CSS Transitions & Animations</title>
+</head>
+<body>
+
+      <section class="transitions">
+        <h2 class="transition-title">Transitions</h2>
+        <div class="first-part">
+            <div class="timing-function">
+                <p>These are examples</p>
+                <div class="example-1">The "linear" function</div>
+                <div class="example-2">The "ease" function</div>
+                <div class="example-3">The "ease-in" function</div>
+                <div class="example-4">The "ease-out" function</div>
+            </div>
+            <div class="transitions-explanation">
+                <p>CSS Transitions allow you to smoothly animate changes to CSS properties over time. This feature adds dynamic and visually appealing effects to websites and web applications.</p>
+            </div>
+        </div>
+            
+        <div class="transitions-property">    
+            <button>property</button>
+            <button>duration</button>
+            <button>timing-function</button>
+            <button>delay</button>
+        </div>
+    </section>
+
+    <section class="transforms-section">
+        <h2>CSS Transformations</h2>
+        <p>CSS property that allows you to appply a 2D or 3D transformation to an element, lets you rotate, scale, skew and translate an element. You can create animation by combining transforms with transitions</p>
+    </section>
+    
+    <section class="transforms-container">
+        <article>
+            <h3>Rotate</h3>
+            <p>rotates element clockwise or counter clockwise at a given degree
+            </p>
+            <div class="rotate"></div>
+        </article>
+        <article>
+            <h3>Skew</h3>
+            <p>shorthand for skewX()skewY() allows you to tilt an element one way or another </p>
+            <div class="skew"></div>
+        </article>
+        <article>
+            <h3>Scale</h3>
+            <p>can increase or decrease the size of elements using this function
+            </p>
+            <div class="scale"></div>
+        </article>
+        <article>
+            <h3>Translate</h3>
+            <p>moves element from current position along x and y axis</p>
+            <div class="translate"></div>
+        </article>
+    </section>
+    
+    
+    <section class="transforms-section">
+        <p>By modifying the coordinate space, CSS transforms change the shape and position of the affected content without disrupting the normal document flow</p>
+        <aside><h1>CSS Transformations</h1></aside>
+    </section>
+  
+  <!-- animation section -->
     <div class="animation-section">
       <h2>WELCOME TO CSS ANIMATIONS</h2>
       <div class="container-line">
@@ -55,5 +116,6 @@
         </div>
       </section>
     </div>
-  </body>
+
+</body>
 </html>
