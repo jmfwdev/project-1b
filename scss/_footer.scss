@@ -1,0 +1,8 @@
+@use 'color' as *;
+
+footer {
+    justify-content: center;
+    display: flex;
+    background-color: $dark;
+    margin-top: 5rem;
+}
