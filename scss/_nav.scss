@@ -19,6 +19,28 @@
     font-weight: normal;
 }
 
+.navLinks a:hover {
+    color: purple;
+}
+
+.backTop {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.backTop a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    padding: 1rem;
+}
+
+.backTop a:hover {
+    color: purple;
+    background-color: $darkest;
+}
+
 @media (max-width: 50em) {
     .navLinks {
         margin-top: 5rem;
