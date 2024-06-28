@@ -1,25 +1,30 @@
+@use 'color' as *;
 
 .transitions {
     align-items: center;
-    background-color: #b182eb;
+    background-color: $mid;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px $darkest;
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: 8rem;
 }
 
 .transition-title{
-    align-content: center;
     margin: 0 auto;
-    background-color: #fff;
-    width: 130px;
+    background-color: $mid;
     height: 70px;
     transition: all 5s;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .transition-title:hover{
-    width: 150px;
+    // width: 150px;
     height: 150px;
-    background-color: aqua;
+    background-color: $lightest;
 }
 
 .first-part{
@@ -28,7 +33,7 @@
 }
 
 .timing-function{
-    border: 1px solid black;
+    border: 1px solid $darkest;
     max-width: 5000px;
 
 }
@@ -36,9 +41,10 @@
 .example-1, .example-2, .example-3, .example-4 {
     width: 100px;
     height: 100px;
-    background: rgb(233, 147, 147);
+    background: $darkest;
     margin: 10px;
     transition: width 3s;
+    box-shadow: 0 4px 8px #BEBAE8;
 }
 
 .example-1 {

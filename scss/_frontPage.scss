@@ -3,12 +3,17 @@
 .frontPage {
     width: 100vw;
     height: 100vh;
-    background: #466368;
-    background: linear-gradient($gradient-start, $gradient-end);
+    // background-color: ;
 }
 
 h1 {
     display: flex;
     justify-content: center;
     padding: 3rem;
+    background-color: $dark;
+    margin: 0 auto;
+}
+
+html {
+    background-color: $mid;
 }

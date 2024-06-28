@@ -9,8 +9,9 @@
   }
 }
 .animation-section {
-  height: 500vh;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 50rem;
+  margin-top: 8rem;
 }
 .container-line {
   position: fixed;
@@ -138,11 +139,13 @@
     text-align: left;
   }
   p {
-    border: solid 2px black;
-    padding: 10px;
-    background-color: rgb(219, 218, 218);
+    border: solid 2px $darkest;
+    // padding: 10px;
     border-radius: 10px;
     z-index: 4;
+    box-shadow: 0 4px 8px #BEBAE8;
+    padding: 1rem;
+    margin: 1rem;
   }
   @include respond-to(small) {
     h2 {
@@ -152,6 +155,16 @@
     font-size: 30px;
    }
     }
+}
+
+@media (max-width:50em) {
+  .animation-section h2 {
+    padding: 1rem;
+  }
+
+  .animation-section {
+    max-width: 37.5rem;
+  }
 }
 
 

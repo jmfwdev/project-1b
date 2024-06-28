@@ -1,3 +1,5 @@
+@use 'color' as *;
+
 .navLinks {
     display: flex;
     justify-content: space-around;
@@ -13,5 +15,12 @@
 .navLinks h2 {
     padding: 1.5rem 1rem;
     margin: 2rem auto;
-    border: solid black;
+    border: solid $darkest;
+    font-weight: normal;
+}
+
+@media (max-width: 50em) {
+    .navLinks {
+        margin-top: 5rem;
+    }
 }
