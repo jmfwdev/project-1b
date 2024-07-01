@@ -14,7 +14,7 @@
 .transition-title{
     margin: 0 auto;
     background-color: $mid;
-    height: 70px;
+    height: 4.375rem;
     transition: all 5s;
     justify-content: center;
     display: flex;
@@ -23,7 +23,7 @@
 
 .transition-title:hover{
     // width: 150px;
-    height: 150px;
+    height: 9.375rem;
     background-color: $lightest;
 }
 
@@ -34,15 +34,15 @@
 
 .timing-function{
     border: 1px solid $darkest;
-    max-width: 5000px;
+    max-width: 312.5rem;
 
 }
 
 .example-1, .example-2, .example-3, .example-4 {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     background: $darkest;
-    margin: 10px;
+    margin: .625rem;
     transition: width 3s;
     box-shadow: 0 4px 8px #BEBAE8;
 }
@@ -64,9 +64,9 @@
 }
 
 .example-1:hover, .example-2:hover, .example-3:hover, .example-4:hover {
-    width: 300px;
+    width: 18.75rem;
 }
 
 .transitions-explanation p{
-    margin-left: 10px;
+    margin-left: .625rem;
 }
