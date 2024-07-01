@@ -3,8 +3,9 @@
 .navLinks {
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    margin-top: 8rem;
 }
 
 .navLinks a {
@@ -17,6 +18,7 @@
     margin: 2rem auto;
     border: solid $darkest;
     font-weight: normal;
+    font-size: 2rem;
 }
 
 .navLinks a:hover {
@@ -44,5 +46,11 @@
 @media (max-width: 50em) {
     .navLinks {
         margin-top: 5rem;
+        flex-direction: column;
+
+    }
+
+    .navLinks h2 {
+        font-size: 2rem;
     }
 }
