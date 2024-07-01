@@ -10,7 +10,7 @@
 
 .navLinks a {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 .navLinks h2 {
@@ -22,7 +22,7 @@
 }
 
 .navLinks a:hover {
-    color: purple;
+    color: #800080;
 }
 
 .backTop {
@@ -34,12 +34,12 @@
 .backTop a{
     text-decoration: none;
     list-style-type: none;
-    color: black;
+    color: #000000;
     padding: 1rem;
 }
 
 .backTop a:hover {
-    color: purple;
+    color: #800080;
     background-color: $darkest;
 }
 
