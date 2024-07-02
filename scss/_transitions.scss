@@ -110,3 +110,9 @@
     align-items: center;
     flex-direction: column;
 }
+
+@media (max-width: 50em) {
+    .first-part {
+        flex-direction: column;
+    }
+}
