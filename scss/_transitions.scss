@@ -1,0 +1,118 @@
+@use 'color' as *;
+
+.transitions {
+    align-items: center;
+    background-color: $mid;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px $darkest;
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: 8rem;
+}
+
+.transition-title{
+    margin: 0 auto;
+    background-color: $mid;
+    height: 4.375rem;
+    transition: all 5s;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.transition-title:hover{
+    // width: 150px;
+    height: 9.375rem;
+    background-color: $lightest;
+}
+
+.first-part{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+
+}
+
+.timing-function,
+.transitions-explanation {
+    flex: 1;
+    padding: .625rem;
+    box-sizing: border-box;
+}
+
+.timing-function{
+    border: 1px solid $darkest;
+    max-width: 312.5rem;
+
+}
+
+.example-1, .example-2, .example-3, .example-4 {
+    width: 6.25rem;
+    height: 6.25rem;
+    background: $darkest;
+    margin: .625rem;
+    transition: width 3s;
+    box-shadow: 0 4px 8px #BEBAE8;
+}
+
+.example-1 {
+    transition-timing-function: linear;
+}
+
+.example-2 {
+    transition-timing-function: ease;
+}
+
+.example-3 {
+    transition-timing-function: ease-in;
+}
+
+.example-4 {
+    transition-timing-function: ease-out;
+}
+
+.example-1:hover, .example-2:hover, .example-3:hover, .example-4:hover {
+    width: 18.75rem;
+}
+
+.transitions-explanation p{
+    margin-left: .625rem;
+}
+
+.transitions-property button {
+    padding: .625rem 1.25rem;
+    margin: .3125rem;
+    border: .125rem solid #000;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: all 2s ease;
+}
+
+.transitions-property button:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.1);
+    border-color: #fff;
+}
+
+.transition-structure{
+    margin-top: 32px;
+    border-top: .1rem solid white;
+}
+
+.transition-structure-property {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 50em) {
+    .first-part {
+        flex-direction: column;
+    }
+}

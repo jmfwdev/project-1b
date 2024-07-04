@@ -1,0 +1,32 @@
+
+
+$font-stack: 'Chentalle', Arial, serif;
+
+h1,
+h2,
+.two h2,
+h3 {
+    font-family: $font-stack;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: normal;
+}
+
+@media (max-width: 50em) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 3rem;
+    }
+}
+
+p,
+button,
+div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

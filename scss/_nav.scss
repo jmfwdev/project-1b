@@ -1,0 +1,56 @@
+@use 'color' as *;
+
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navLinks h2 {
+    padding: 1.5rem 1rem;
+    margin: 2rem auto;
+    border: solid $darkest;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.navLinks a:hover {
+    color: #800080;
+}
+
+.backTop {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.backTop a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #000000;
+    padding: 1rem;
+}
+
+.backTop a:hover {
+    color: #800080;
+    background-color: $darkest;
+}
+
+@media (max-width: 50em) {
+    .navLinks {
+        margin-top: 5rem;
+        flex-direction: column;
+
+    }
+
+    .navLinks h2 {
+        font-size: 1rem;
+    }
+}
