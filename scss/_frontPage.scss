@@ -18,3 +18,9 @@ h1 {
 html {
     background-color: $mid;
 }
+
+@media (max-width: 50em) {
+    h1 {
+        font-size: 2rem;
+    }
+}
